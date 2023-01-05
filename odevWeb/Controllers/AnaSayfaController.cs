@@ -1,4 +1,5 @@
-﻿using System;
+﻿using odevWeb.Models.Siniflar;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,9 +10,11 @@ namespace odevWeb.Controllers
     public class AnaSayfaController : Controller
     {
         // GET: AnaSayfa
+        Context c = new Context();
         public ActionResult Index()
         {
-            return View();
+            var deger = c.AnaSayfas.ToList();
+            return View(deger);
         }
     }
 }
