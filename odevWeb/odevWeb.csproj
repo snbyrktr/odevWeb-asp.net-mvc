@@ -187,6 +187,7 @@
     <Content Include="web-web-sena\.vs\web-sena\config\applicationhost.config" />
     <Content Include="web-web-sena\.vs\web-sena\v16\.suo" />
     <Content Include="Views\AnaSayfa\Index.cshtml" />
+    <Content Include="Views\AnaSayfa\ikonlar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
