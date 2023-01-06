@@ -8,32 +8,36 @@
 <html>
 <head>
     <title>W3.CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"/>
 </head>   
     <body>
 
         <!-- Sidebar -->
         <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
-            <h3 class="w3-bar-item">Menu</h3>
-            <a href="#" class="w3-bar-item w3-button">Link 1</a>
-            <a href="#" class="w3-bar-item w3-button">Link 2</a>
-            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+            <h3 class="w3-bar-item">Admin panel</h3>
+            <a href="~/Views/Admin/Index.cshtml" class="w3-bar-item w3-button">Ana Sayfa</a>
+           
+            <a href="~/Views/AnaSayfa/Index.cshtml" class="w3-bar-item w3-button btn-info">Siteye Git</a>
+            <a href="~/Views/Login/LogOut/" class="w3-bar-item w3-button btn-danger">Çıkış</a>
+
         </div>
 
 <!-- Page Content -->
-<div style="margin-left:25%">
+        <div style="margin-left:25%">
 
-    <div class="w3-container w3-teal">
-        <h1>My Page</h1>
-    </div>
+            
+            <div class="w3-container w3-teal" style="background-image: linear-gradient(120deg, #3498db, #8e44ad); ">
+                <h1 style="white">My WebSite</h1>
+            </div>
 
-    <div class="w3-container">
-        @RenderBody()
-        
-    </div>
+            <div class="w3-container">
+                @RenderBody()
 
-</div>
+            </div>
+
+        </div>
 
 </body>
 </html>

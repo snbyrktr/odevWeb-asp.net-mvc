@@ -16,7 +16,11 @@
 <body>
     <div class="center">
         <div class="avatar">
-            <img src="~/web-web-sena/booo..jpg">
+            @foreach(var x in Model)
+            {
+                <img src="@x.profil">
+            }
+            
         </div>
         <div class="content">
             @foreach (var x in Model)
